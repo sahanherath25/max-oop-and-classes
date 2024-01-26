@@ -29,28 +29,17 @@ const restaurant = {
     },
 };
 
-const {name: hotelName, location: place} = restaurant
-//
-// console.log(hotelName)
-// console.log(place)
-//
-// const {mainMenu="Not Yet Added",categories:catalog="OUR DEFAULT CATALOG"}=restaurant
-//
-// console.log(mainMenu,catalog)
+console.log(foodArray)
 
-//TODO Mutation
-// let a=100;
-// let b =200;
+const previousMenu=["String Hoppers","Wheat","Rice and Curry"]
+const clonedObject=[...previousMenu,...foodArray]
 
-const numbers= {a:911,b:480,c:99};
-({a,b}=numbers)
+previousMenu[0]="FUCK YOU NISHANTHA"
 
+console.log(foodArray)
+console.log(previousMenu)
+console.log(clonedObject)
+clonedObject[2]="SURU";
 
-//TODO Nested Objects
-
-const {openingHours:{weekday,weekend}}=restaurant;
-
-console.log(weekend)
-console.log(weekday)
 
 
