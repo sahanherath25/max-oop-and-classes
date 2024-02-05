@@ -42,4 +42,20 @@ console.log(clonedObject)
 clonedObject[2]="SURU";
 
 
+class App {
+
+    static init() {
+        const shop = new Shop();
+        shop.render()
+        this.cart = shop.cart; //Shop.cart
+    }
+
+    static addProductToCart(product) {
+        this.cart.addProductToCart(product);
+
+    }
+}
+
+
+
 
